@@ -22,6 +22,4 @@ module.exports = {
    setEnabled: function(enabled) {
        FIRAnalytics.setEnabled(enabled);
    }
-}
-
-module.exports = FA;
+};
