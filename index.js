@@ -5,23 +5,23 @@ var {NativeModules} = React;
 
 var FIRAnalytics = NativeModules.RNFIRAnalytics;
 
-class FA {
+module.exports = {
 
-    static setUserId(userId) {
-        FIRAnalytics.setUserId(userId);
-    }
+   setUserId: function(userId) {
+       FIRAnalytics.setUserId(userId);
+   }
 
-    static setUserProperty(name, property) {
-        FIRAnalytics.setUserProperty(name, property);
-    }
+   setUserProperty: function(name, property) {
+       FIRAnalytics.setUserProperty(name, property);
+   }
 
-    static logEvent(name, parameters) {
-        FIRAnalytics.logEvent(name, parameters);
-    }
+   logEvent: function(name, parameters) {
+       FIRAnalytics.logEvent(name, parameters);
+   }
 
-    static setEnabled(enabled) {
-        FIRAnalytics.setEnabled(enabled);
-    }
+   setEnabled: function(enabled) {
+       FIRAnalytics.setEnabled(enabled);
+   }
 }
 
 module.exports = FA;
